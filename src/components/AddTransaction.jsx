@@ -35,9 +35,9 @@ const AddTransaction = (props) => {
 			// console.log(props.valtransaction);
 		},
 	});
-	const tampil = () => {
-		console.log(props.transaction);
-	};
+	// const tampil = () => {
+	// 	console.log(props.transaction);
+	// };
 	return (
 		<>
 			<div>
