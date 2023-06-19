@@ -16,11 +16,11 @@ const AddTransaction = (props) => {
 		validationSchema: Yup.object({
 			tanggal: Yup.string().required("Harap isi tanggal"),
 			keterangan: Yup.string()
-				.min(2, "Minimal dua karakter bro")
-				.required("Isi Cugs"),
+				.min(2, "Minimal dua karakter")
+				.required("Harap isi keterangan"),
 			nominal: Yup.number()
 				.typeError("Harus berupa angka")
-				.required("Isinya angka woy!!!")
+				.required("Isinya angka!!!")
 				.integer("Harus angka"),
 		}),
 		onSubmit: (values, { resetForm }) => {
