@@ -20,7 +20,7 @@ const AddTransaction = (props) => {
 				.required("Harap isi keterangan"),
 			nominal: Yup.number()
 				.typeError("Harus berupa angka")
-				.required("Isinya angka!!!")
+				.required("Harap isi nominal")
 				.integer("Harus angka"),
 		}),
 		onSubmit: (values, { resetForm }) => {
